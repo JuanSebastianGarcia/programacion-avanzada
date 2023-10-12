@@ -6,7 +6,8 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -15,9 +16,8 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Medico implements Serializable {
+public class Paciente implements Serializable {
 
-    //atributos
     @Id
     @EqualsAndHashCode.Include
     private int cedula;
@@ -26,15 +26,14 @@ public class Medico implements Serializable {
     private List<String> telefono;
 
     private String nombre;
-    private String password;
     private String email;
-    private String CiudadResidencia;
-    private String especialidad;
-    private LocalDateTime hotaEntrada;
-    private LocalDateTime horaSalida;
+    private String password;
+    private String ciudadResidencia;
+    private LocalDate fechaNacimiento;
+    private String grupoSanguineo;
     private int acceso;
-
-
+    @ElementCollection
+    private List<Integer> alergias;
 
 
 }
