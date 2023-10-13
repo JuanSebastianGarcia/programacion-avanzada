@@ -19,7 +19,7 @@ public class Paciente implements Serializable{
 
     @Id
     @EqualsAndHashCode.Include
-    private int cedula;
+    private Integer cedula;
 
     @ElementCollection
     private List<String> telefono;
