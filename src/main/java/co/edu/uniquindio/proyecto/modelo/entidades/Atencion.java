@@ -20,7 +20,8 @@ public class Atencion implements Serializable {
     private int id;
     private String diagnostico;
     private String tratamiento;
-    private int citaId;
-    private int pqrsId;
+
+    private int citaId;//foreign key
+    private int pqrsId;//foreign key
 
 }

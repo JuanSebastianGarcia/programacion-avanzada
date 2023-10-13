@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Pqrs implements Serializable {
+public class Pqrs implements Serializable{
 
     @EqualsAndHashCode.Include
     @Id

@@ -4,13 +4,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.io.Serializable;
+
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 @Setter
 @Getter
 @NoArgsConstructor
 @Entity
-public class Alergia {
+public class Alergia implements Serializable {
 
     @EqualsAndHashCode.Include
     @Id

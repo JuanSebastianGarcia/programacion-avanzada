@@ -5,7 +5,6 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
@@ -13,17 +12,12 @@ import java.time.LocalDateTime;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Comentario implements Serializable {
+public class Eps implements Serializable{
 
     @EqualsAndHashCode.Include
     @Id
     private int id;
-    private LocalDateTime fecha;
-    private String mensaje;
-
-    private int pqrsId;//foreign key
-    private int emisorCedula;//foreign key
-    private int receptorCedula;//foreign key
+    private String nombre;
 
 
 }

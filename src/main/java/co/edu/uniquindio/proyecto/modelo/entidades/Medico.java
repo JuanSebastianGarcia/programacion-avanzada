@@ -15,16 +15,14 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Medico implements Serializable {
+public class Medico implements Serializable{
 
     //atributos
     @Id
     @EqualsAndHashCode.Include
     private int cedula;
 
-    @ElementCollection
-    private List<String> telefono;
-
+    private String telefono;
     private String nombre;
     private String password;
     private String email;

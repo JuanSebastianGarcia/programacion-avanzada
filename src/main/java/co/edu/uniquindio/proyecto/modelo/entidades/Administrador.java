@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Administrador implements Serializable {
+public class Administrador implements Serializable{
 
     
     @EqualsAndHashCode.Include

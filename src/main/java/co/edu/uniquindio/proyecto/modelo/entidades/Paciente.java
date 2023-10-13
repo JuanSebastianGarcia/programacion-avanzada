@@ -16,7 +16,7 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Paciente implements Serializable {
+public class Paciente implements Serializable{
 
     @Id
     @EqualsAndHashCode.Include
@@ -32,8 +32,10 @@ public class Paciente implements Serializable {
     private LocalDate fechaNacimiento;
     private String grupoSanguineo;
     private int acceso;
+
     @ElementCollection
     private List<Integer> alergias;
+    private int epsId;//foreign key
 
 
 }

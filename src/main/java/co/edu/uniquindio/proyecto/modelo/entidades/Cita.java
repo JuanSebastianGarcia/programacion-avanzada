@@ -26,8 +26,8 @@ public class Cita implements Serializable {
     private LocalDateTime fechaCreacion;
     private LocalDateTime fechaHoraCita;
 
-    private int MedicoCedula;
-    private int PacienteCedula;
+    private int medicoCedula;//foreign key
+    private int pacienteCedula;//foreign key
 
 
 }

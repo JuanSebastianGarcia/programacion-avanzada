@@ -21,7 +21,8 @@ public class HistorialDescanso implements Serializable {
     @Id
     private int id;
     private LocalDate fecha;
-    private String cedulaMedico;
+
+    private String cedulaMedico;//foreign key
 
 
 
