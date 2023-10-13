@@ -1,4 +1,4 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
@@ -6,7 +6,6 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -31,11 +30,11 @@ public class Paciente implements Serializable{
     private String ciudadResidencia;
     private LocalDate fechaNacimiento;
     private String grupoSanguineo;
-    private int acceso;
+    private Integer acceso;
 
     @ElementCollection
     private List<Integer> alergias;
-    private int epsId;//foreign key
+    private Integer epsId;//foreign key
 
 
 }

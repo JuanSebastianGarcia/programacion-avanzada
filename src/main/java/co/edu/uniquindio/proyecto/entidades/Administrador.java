@@ -1,11 +1,10 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
@@ -13,13 +12,14 @@ import java.time.LocalDateTime;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Pqrs implements Serializable{
+public class Administrador implements Serializable{
 
+    
     @EqualsAndHashCode.Include
     @Id
-    private int id;
-    private String estado;
-    private String tipo;
-    private LocalDateTime fechaCreacion;
+    private Integer Cedula;
+    private String email;
+    private String password;
+    private Integer acceso;
 
 }

@@ -1,4 +1,4 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -12,12 +12,13 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Eps implements Serializable{
+public class Alergia implements Serializable {
 
     @EqualsAndHashCode.Include
     @Id
-    private int id;
-    private String nombre;
+    private Integer id;
+    private String alergia;
+
 
 
 }

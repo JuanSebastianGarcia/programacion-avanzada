@@ -1,10 +1,9 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
@@ -17,11 +16,11 @@ public class Atencion implements Serializable {
 
     @EqualsAndHashCode.Include
     @Id
-    private int id;
+    private Integer id;
     private String diagnostico;
     private String tratamiento;
 
-    private int citaId;//foreign key
-    private int pqrsId;//foreign key
+    private Integer citaId;//foreign key
+    private Integer pqrsId;//foreign key
 
 }

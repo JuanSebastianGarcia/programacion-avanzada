@@ -1,13 +1,11 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
-import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
@@ -20,7 +18,7 @@ public class Medico implements Serializable{
     //atributos
     @Id
     @EqualsAndHashCode.Include
-    private int cedula;
+    private Integer cedula;
 
     private String telefono;
     private String nombre;
@@ -30,7 +28,7 @@ public class Medico implements Serializable{
     private String especialidad;
     private LocalDateTime hotaEntrada;
     private LocalDateTime horaSalida;
-    private int acceso;
+    private Integer acceso;
 
 
 

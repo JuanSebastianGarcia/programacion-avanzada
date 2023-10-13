@@ -1,4 +1,4 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -17,13 +17,13 @@ public class Comentario implements Serializable {
 
     @EqualsAndHashCode.Include
     @Id
-    private int id;
+    private Integer id;
     private LocalDateTime fecha;
     private String mensaje;
 
-    private int pqrsId;//foreign key
-    private int emisorCedula;//foreign key
-    private int receptorCedula;//foreign key
+    private Integer pqrsId;//foreign key
+    private Integer emisorCedula;//foreign key
+    private Integer receptorCedula;//foreign key
 
 
 }
