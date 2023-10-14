@@ -1,5 +1,6 @@
 package co.edu.uniquindio.proyecto.entidades;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -19,8 +20,12 @@ public class HistorialDescanso implements Serializable {
     @EqualsAndHashCode.Include
     @GeneratedValue
     @Id
+    @Column(name="id")
     private Integer id;
+
+    @Column(name="fecha")
     private LocalDate fecha;
+
 
     private String cedulaMedico;//foreign key
 
