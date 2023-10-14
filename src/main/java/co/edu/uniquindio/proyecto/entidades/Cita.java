@@ -35,8 +35,10 @@ public class Cita implements Serializable {
     @Column(name="fecha_hora_cita")
     private LocalDateTime fechaHoraCita;
 
-
+    @Column(name="medico_cedula")
     private Integer medicoCedula;//foreign key
+
+    @Column(name="paciente_cedula")
     private Integer pacienteCedula;//foreign key
 
 

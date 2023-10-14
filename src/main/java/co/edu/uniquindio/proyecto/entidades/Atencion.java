@@ -28,9 +28,10 @@ public class Atencion implements Serializable {
     @Column(name="tratamiento")
     private String tratamiento;
 
-
-
+    @Column(name="cita_id")
     private Integer citaId;//foreign key
+
+    @Column(name="pqrs_id")
     private Integer pqrsId;//foreign key
 
 }

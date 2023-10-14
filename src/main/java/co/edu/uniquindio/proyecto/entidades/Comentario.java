@@ -30,9 +30,14 @@ public class Comentario implements Serializable {
     private String mensaje;
 
 
+    @Column(name="pqrs_id")
     private Integer pqrsId;//foreign key
-    private Integer emisorCedula;//foreign key
-    private Integer receptorCedula;//foreign key
+
+    @Column(name="administrador_cedula")
+    private Integer administradorCedula;//foreign key
+
+    @Column(name="paciente_cedula")
+    private Integer pacienteCedula;//foreign key
 
 
 }

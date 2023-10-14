@@ -50,7 +50,7 @@ public class Paciente implements Serializable{
     @ElementCollection
     private List<Integer> alergias;
 
-
+    @Column(name="eps_id")
     private Integer epsId;//foreign key
 
 

@@ -26,8 +26,8 @@ public class HistorialDescanso implements Serializable {
     @Column(name="fecha")
     private LocalDate fecha;
 
-
-    private String cedulaMedico;//foreign key
+    @Column(name="medico_cedula")
+    private String medicoCedula;//foreign key
 
 
 
