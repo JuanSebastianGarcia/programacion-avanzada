@@ -56,20 +56,51 @@ public class PacienteServicioTest {
         try {
             Paciente nuevo = pacienteServicio.registrarPaciente(paciente);
             Assertions.assertNotNull(nuevo);
+            System.out.println(nuevo);
         } catch (Exception e){
 
             throw new RuntimeException(e);
 
         }
 
+        // buscar el paciente
+
+        try {
+             Paciente buscado= pacienteServicio.obtenerPaciente(1007053789);
+             System.out.println(buscado.getEmail());
+
+        }catch (Exception e){
+
+            throw new RuntimeException(e);
+
+        }
+
+
         // Llamamos el servicio de actualizar
+
+        paciente.setNombre("Juan");
         try {
             Paciente actualizar = pacienteServicio.actualizarPaciente(paciente);
-            Assertions.assertNotNull(actualizar);
+            Paciente buscado= pacienteServicio.obtenerPaciente(1007053789);
+            System.out.println(buscado.getNombre());
         }catch (Exception e){
 
             throw new RuntimeException(e);
         }
+
+        // Eliminar el paciente
+        try {
+            pacienteServicio.eliminarPaciente(paciente.getCedula());
+            System.out.println("se elimino");
+
+        }catch (Exception e){
+
+            throw new RuntimeException(e);
+        }
+
+
+
+
 
 
 
