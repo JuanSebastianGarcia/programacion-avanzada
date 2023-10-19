@@ -11,7 +11,7 @@ public interface AdministradorServicio {
 
     Integer actualizarAdministrador(Administrador a)throws Exception;
 
-    String eliminarAdministrador(int id)throws Exception;
+    void eliminarAdministrador(int id)throws Exception;
 
     Administrador buscarAdministrador(int id)throws Exception;
 
