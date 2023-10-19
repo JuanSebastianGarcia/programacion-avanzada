@@ -12,10 +12,10 @@ import java.util.List;
 @Service
 public class AdministradorServicioImpl implements AdministradorServicio {
 
-    private AdministradorRepository repositorio;
+    private final AdministradorRepository repository;
 
     public AdministradorServicioImpl(AdministradorRepository repo){
-        this.repositorio=repo;
+        this.repository=repo;
     }
 
 

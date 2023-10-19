@@ -5,7 +5,7 @@ import co.edu.uniquindio.proyecto.entidades.Comentario;
 
 import java.util.List;
 
-public interface ComentarioRepository {
+public interface ComentarioServicio {
 
     Integer registrarComentario(Comentario a)throws Exception;
 
