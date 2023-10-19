@@ -12,9 +12,10 @@ public interface AlergiaServicio {
 
     Integer actualizarAlergia(Alergia a)throws Exception;
 
-    String eliminarAlergia(int id)throws Exception;
+    String eliminarAlergia(String alergia)throws Exception;
 
-    Alergia buscarAlergia(int id)throws Exception;
+
+    Alergia buscarAlergia(String alergia)throws Exception;
 
     List<Alergia> listarAlergias();
 

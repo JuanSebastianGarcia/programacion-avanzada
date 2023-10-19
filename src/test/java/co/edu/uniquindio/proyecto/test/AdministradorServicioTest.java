@@ -24,7 +24,7 @@ public class AdministradorServicioTest {
         Administrador a=new Administrador();
         a.setAcceso(3);
         a.setNombre("juan");
-        a.setEmail("juan@");
+        a.setEmail("admin@");
         a.setPassWord("123");
         a.setCedula(1234);
 
