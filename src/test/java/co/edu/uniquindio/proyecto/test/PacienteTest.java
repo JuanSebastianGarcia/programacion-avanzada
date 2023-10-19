@@ -1,7 +1,7 @@
 package co.edu.uniquindio.proyecto.test;
 
 import co.edu.uniquindio.proyecto.entidades.Paciente;
-import co.edu.uniquindio.proyecto.repositorios.PacienteRep;
+import co.edu.uniquindio.proyecto.repositorios.PacienteRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.util.List;
 public class PacienteTest {
 
     @Autowired
-    private PacienteRep pacienteRep;
+    private PacienteRepository pacienteRep;
 
     @Test
     public void registrarPacienteTest() {
