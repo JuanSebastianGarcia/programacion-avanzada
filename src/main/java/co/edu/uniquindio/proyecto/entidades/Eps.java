@@ -1,12 +1,12 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.*;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
@@ -14,15 +14,16 @@ import java.time.LocalDate;
 @Getter
 @NoArgsConstructor
 @Entity
-public class HistorialDescanso implements Serializable {
+public class Eps implements Serializable{
 
     @EqualsAndHashCode.Include
-    @GeneratedValue
     @Id
-    private int id;
-    private LocalDate fecha;
-    private String cedulaMedico;
+    @GeneratedValue
+    @Column(name="id")
+    private Integer id;
 
+    @Column(name="nombre")
+    private String nombre;
 
 
 }

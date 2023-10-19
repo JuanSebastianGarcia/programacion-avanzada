@@ -1,12 +1,12 @@
-package co.edu.uniquindio.proyecto.modelo.entidades;
+package co.edu.uniquindio.proyecto.entidades;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -16,24 +16,42 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Paciente implements Serializable {
+public class Paciente implements Serializable{
 
     @Id
     @EqualsAndHashCode.Include
-    private int cedula;
+    @Column(name="cedula")
+    private Integer cedula;
 
     @ElementCollection
     private List<String> telefono;
 
+    @Column(name="nombre")
     private String nombre;
+
+    @Column(name="email")
     private String email;
-    private String password;
+
+    @Column(name="pass_word")
+    private String passWord;
+
+    @Column(name="ciudad_residencia")
     private String ciudadResidencia;
+
+    @Column(name="fecha_nacimiento")
     private LocalDate fechaNacimiento;
+
+    @Column(name="grupo_sanguineo")
     private String grupoSanguineo;
-    private int acceso;
+
+    @Column(name="acceso")
+    private Integer acceso;
+
     @ElementCollection
     private List<Integer> alergias;
+
+    @Column(name="eps_id")
+    private Integer epsId;//foreign key
 
 
 }
