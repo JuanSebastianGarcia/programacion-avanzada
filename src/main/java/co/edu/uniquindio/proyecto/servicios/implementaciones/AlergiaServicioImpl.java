@@ -3,9 +3,13 @@ package co.edu.uniquindio.proyecto.servicios.implementaciones;
 import co.edu.uniquindio.proyecto.entidades.Alergia;
 import co.edu.uniquindio.proyecto.repositorios.AlergiaRepository;
 import co.edu.uniquindio.proyecto.servicios.interfaces.AlergiaServicio;
+import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Transactional
+@Service
 public class AlergiaServicioImpl implements AlergiaServicio {
 
 

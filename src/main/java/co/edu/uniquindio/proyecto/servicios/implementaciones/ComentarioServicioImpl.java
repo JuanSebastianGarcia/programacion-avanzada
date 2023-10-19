@@ -3,9 +3,13 @@ package co.edu.uniquindio.proyecto.servicios.implementaciones;
 import co.edu.uniquindio.proyecto.entidades.Comentario;
 import co.edu.uniquindio.proyecto.repositorios.ComentarioRepository;
 import co.edu.uniquindio.proyecto.servicios.interfaces.ComentarioServicio;
+import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Transactional
+@Service
 public class ComentarioServicioImpl implements ComentarioServicio {
 
     private final ComentarioRepository repository;

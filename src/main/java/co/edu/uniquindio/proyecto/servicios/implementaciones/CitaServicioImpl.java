@@ -3,9 +3,13 @@ package co.edu.uniquindio.proyecto.servicios.implementaciones;
 import co.edu.uniquindio.proyecto.entidades.Cita;
 import co.edu.uniquindio.proyecto.repositorios.CitaRepository;
 import co.edu.uniquindio.proyecto.servicios.interfaces.CitaServicio;
+import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Transactional
+@Service
 public class CitaServicioImpl implements CitaServicio {
 
 
