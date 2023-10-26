@@ -37,7 +37,7 @@ public class PqrsServicioTest {
 
 
 
-        // Llmamamos el servicio de registrar
+        //  servicio de registrar
         try {
             Pqrs nuevo = pqrsServicio.registrarpqrs(pqrs);
             Assertions.assertNotNull(nuevo);
@@ -60,13 +60,13 @@ public class PqrsServicioTest {
 
         }
 
-        // Llamamos el servicio de actualizar
+        // servicio de actualizar
 
         pqrs.setEstado("finalizada");
         try {
             Pqrs actualizar = pqrsServicio.actualizarPqrs(pqrs);
-           // Pqrs buscado= pqrsServicio.obtenerPqrs(1);
-           // System.out.println(buscado.getEstado());
+           Pqrs buscado= pqrsServicio.obtenerPqrs(1);
+            System.out.println(buscado.getEstado());
 
 
         }catch (Exception e){
